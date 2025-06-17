@@ -10,3 +10,9 @@ function exibirCor(nome, cor) {
 console.log(exibirCor("Kelly", "Preto"));
 console.log(exibirCor("Essa pessoa"));
 (0, modulos_1.separador)();
+function exibirCorTiago(nome, cor = "Branco") {
+    return ` ${nome}, a cor é ${cor}.`;
+}
+console.log(exibirCorTiago("Tiago", "Cinza"));
+console.log(exibirCorTiago("Essa pessoa"));
+(0, modulos_1.separador)();
