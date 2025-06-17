@@ -1,1 +1,13 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const modulos_1 = require("./modulos");
+let direcao;
+direcao = "esquerda";
+console.log(direcao);
+direcao = "direita";
+console.log(direcao);
+(0, modulos_1.separador)();
+let exemploA = 2112;
+let exemploB = "Senac";
+console.log("Exemplo A: " + exemploA);
+console.log("Exemplo B: " + exemploB);
