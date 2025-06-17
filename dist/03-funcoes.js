@@ -5,15 +5,13 @@ function saudacao(nome) {
     return `Olá ${nome}`;
 }
 console.log(saudacao("Kelly"));
-//console.log(saudacao(true));
-//console.log(saudacao(10));
 (0, modulos_1.separador)();
-function saudacaoCompleta(nome, curso) {
+function saudacaoCompleta(nome, anoLetivo = 2025, curso) {
     if (curso) {
-        return `Olá ${nome}, você está estudando ${curso}`;
+        return `Olá ${nome}, você está estudando ${curso}. Ano letivo: ${anoLetivo}`;
     }
-    return `Olá ${nome}, sei lá o que você está fazendo...`;
+    return `Olá ${nome}, sei lá o que você está fazendo ... Ano letivo: ${anoLetivo} `;
 }
-console.log(saudacaoCompleta("João", "TypeScript"));
+console.log(saudacaoCompleta("João", 2021, "TypeScript"));
 console.log(saudacaoCompleta("Paulo"));
 (0, modulos_1.separador)();
