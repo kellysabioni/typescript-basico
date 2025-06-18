@@ -1,23 +1,23 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const modulos_1 = require("./modulos");
-const bandas = ["Metalica", "Slayer", "Iron Maiden"];
+const bandas = ["Metallica", "Slayer", "Iron Maiden"];
+bandas.push("Nightwish");
+console.log(bandas);
 const artistas = ["Jon Oliva", "Sting", "David Gilmour"];
-console.log(artistas);
-artistas.push("Neil Gaiman");
+artistas.push("Neil Peart");
 console.log(artistas);
 (0, modulos_1.separador)();
-const pessoas = ["TEnis", 39, "Marta", 25];
+const pessoas = ["Tiago", 28, "Maria", 45];
 console.log(pessoas);
 (0, modulos_1.separador)();
 const linguagens = [
     ["JS", "TS"],
-    ["React", "React Native"],
+    ["HTML", "CSS", "Bootstrap"],
 ];
-console.log(linguagens[1]);
+console.log(linguagens[0][0]);
+console.log(linguagens[1][0]);
 (0, modulos_1.separador)();
-const numeros = [100, 120, 300, 1440, 50];
-const total = numeros.reduce((acumulador, numero) => {
-    return acumulador + numero;
-}, 0);
+const numeros = [10, 50, 1000, 266, 78];
+const total = numeros.reduce((acumulador, numero) => acumulador + numero, 0);
 console.log(total);
