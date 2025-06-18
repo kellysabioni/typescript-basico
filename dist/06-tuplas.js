@@ -27,6 +27,6 @@ function verificarResultado(sucesso) {
         ? [200, "Operação realizada com sucesso"]
         : [500, "Erro inesperado no servidor"];
 }
-let [, Resultado] = verificarResultado(false);
-console.log(Resultado);
+let [, mensagem] = verificarResultado(false);
+console.log(mensagem);
 (0, modulos_1.separador)();

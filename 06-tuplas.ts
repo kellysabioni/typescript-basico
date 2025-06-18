@@ -47,6 +47,6 @@ function verificarResultado(sucesso: boolean): Resultado {
      : [500, "Erro inesperado no servidor"]
 }
 
-let [, Resultado] = verificarResultado(false)
-console.log(Resultado);
-separador();
+let [ , mensagem ] = verificarResultado(false)
+console.log(mensagem);
+separador()
