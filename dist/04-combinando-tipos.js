@@ -21,3 +21,17 @@ console.log(situacaoAluno3);
 (0, modulos_1.separador)();
 const diaAtual = "Quinta-feira";
 console.log(diaAtual);
+(0, modulos_1.separador)();
+const programadora = {
+    nome: "Kelly",
+    idade: 43,
+    salario: 5000
+};
+console.log(programadora);
+(0, modulos_1.separador)();
+const outroProgramdor = {
+    nome: "Fulano",
+    idade: 55,
+    salario: 60000
+};
+console.log(outroProgramdor);

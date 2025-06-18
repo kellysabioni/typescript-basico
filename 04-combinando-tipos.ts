@@ -45,3 +45,24 @@ type DiasDaSemana =
 
 const diaAtual: DiasDaSemana = "Quinta-feira";
 console.log(diaAtual);
+separador();
+
+type Pessoa = {nome: string, idade: number};
+type Funcionario = {salario: number};
+
+const programadora: Pessoa & Funcionario = {
+  nome: "Kelly",
+  idade:43,
+  salario: 5000
+}
+
+console.log(programadora);
+separador();
+
+type Colaborador = Pessoa & Funcionario;
+const outroProgramdor: Colaborador = {
+  nome: "Fulano",
+  idade:55,
+  salario: 60000
+}
+console.log(outroProgramdor);
