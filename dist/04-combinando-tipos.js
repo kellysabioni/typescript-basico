@@ -19,3 +19,5 @@ console.log(situacaoAluno1);
 console.log(situacaoAluno2);
 console.log(situacaoAluno3);
 (0, modulos_1.separador)();
+const diaAtual = "Quinta-feira";
+console.log(diaAtual);
