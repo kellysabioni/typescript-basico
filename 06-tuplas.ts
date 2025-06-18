@@ -31,4 +31,22 @@ function verificarOperacao(sucesso:boolean): [number, string] {
     }
     return [500, "Erro inesperado no servidor"];
 }
-console.log(verificarOperacao(true));
+let resultadoDaOperacao = verificarOperacao(false);
+console.log(resultadoDaOperacao);
+
+separador();
+
+// Miniexercício
+//1) Extraia a tupla do retorno da função para um novo type
+type Resultado = [number, string];
+
+//2) Desetruture o resultado da operação e mostre somente a mensagem no console
+function verificarResultado(sucesso: boolean): Resultado {
+     return sucesso
+     ? [200, "Operação realizada com sucesso"]
+     : [500, "Erro inesperado no servidor"]
+}
+
+let [, Resultado] = verificarResultado(false)
+console.log(Resultado);
+separador();
